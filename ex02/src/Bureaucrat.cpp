@@ -78,7 +78,7 @@ void Bureaucrat::executeForm(const AForm &form)
 {
 	if (form.getExecGrade() < _grade)
 	{
-		std::cout << _name << " couldn't execute " << form.getName() << " because bureaucrat grade is too low" << std::endl;
+		throw std::runtime_error(_name + " couldn't execute " + form.getName() + " because bureaucrat grade is too low");
 	}
 	else
 	{
