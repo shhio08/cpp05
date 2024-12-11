@@ -20,7 +20,8 @@ ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationF
 void ShrubberyCreationForm::execute(const Bureaucrat &executor) const
 {
 	AForm::execute(executor);
-	std::ofstream file(_target + "_shrubbery");
+	std::string filename = _target + "_shrubbery"; 
+	std::ofstream file(filename.c_str());
 	if (!file.is_open())
 		throw std::runtime_error("Error: could not open file");
 	file << "      /\\      " << std::endl;

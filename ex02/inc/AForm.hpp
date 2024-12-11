@@ -4,6 +4,7 @@
 #include <string>
 #include <stdexcept>
 #include "Bureaucrat.hpp"
+#include <stdlib.h>
 
 class Bureaucrat;
 
