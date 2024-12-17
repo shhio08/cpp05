@@ -12,7 +12,7 @@ int main()
         Bureaucrat b2("test2", 135);  // 署名グレードは 145 以下である必要がある
 
         // ShrubberyCreationForm の作成
-        ShrubberyCreationForm form("test_home");
+        ShrubberyCreationForm form("home");
 
         // Bureaucrat によるフォームへの署名
         std::cout << "Attempting to sign form..." << std::endl;
